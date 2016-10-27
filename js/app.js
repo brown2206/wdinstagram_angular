@@ -40,4 +40,10 @@
       {photo_url:"http://lifeloveandgoodfood.com/wp-content/uploads/2015/02/chicken-n-waffles-900x600.jpg", author:"Chef Pookie", body:"Chicken and Waffles"}
     ]
   }
+
+  function WdiNstagShowControllerFunction($stateParams){
+    this.wdinstagram = wdinstagrams[$stateParams.id];
+  }
+
+
 })();
