@@ -1,7 +1,7 @@
 <h2>I'm the wdinstagrams index!</h2>
 
 <div data-ng-repeat="wdinstagram in vm.wdinstagrams">
+  <a data-ui-sref="wdinstagramShow({id: wdinstagram.id})"><p>{{wdinstagram.body}}</p></a>
   <img data-ng-src="{{wdinstagram.photo_url}}">
-  <p>{{wdinstagram.body}}</p>
-  <p>{{wdinstagram.author}}</p>  
+  <p>{{wdinstagram.author}}</p>
 </div>
