@@ -42,7 +42,7 @@
 
   function WdiNstagShowControllerFunction($stateParams){
     console.log($stateParams)
-    this.wdinstagram = wdinstagramData.get({id: $stateParams.id})
+    this.wdinstagram = wdinstagramData[$stateParams.id]
   }
 
 })();
